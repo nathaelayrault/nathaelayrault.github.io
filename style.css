@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 80px 0 80px;
+}
+
+.header-text {
+  width: 35%;
+}
+
+.header h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 42px;
+  margin: 0;
+  color: #534FA5;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 6px 0 24px 0;
+  color: #3A2A89;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  color: #534FA5;
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+#intro-text {
+  max-width: 520px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3A2A89;
+  margin: 14px 0;
+}
+
+#projets-menu {
+  margin: 20px 0;
+}
+
+#projets-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projets-menu li {
+  margin-bottom: 8px;
+}
+
+.menu-secondary {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  color: #534FA5;
+  text-decoration: none;
+}
+
+.header-image {
+  width: 65%;
+}
+
+.header-image img {
+  width: 65%;
+  display: block;
+}
+
+/* Projets */
+.project {
+  display: flex;
+  gap: 60px;
+  margin: 120px 80px;
+}
+
+.text {
+  width: 35%;
+}
+
+.text h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #3A2A89;
+}
+
+.project-type {
+ font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #3A2A89; 
+  margin: 0 0 16px 0;
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #534FA5;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 65%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.image-grid {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  display: block;
+}
+
+.image-grid2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image-grid2 img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 60px 80px;
+  background: #f9f9f9;
+  margin-top: 60px;
+}
+
+.contact h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #3A2A89;
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #534FA5;
+}
+
+.contact a {
+  color: #3A2A89;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton retour en haut */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: #534FA5;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  color: #3A2A89;
+}
