@@ -201,3 +201,64 @@ nav a {
 .back-to-top:hover {
   color: #3A2A89;
 }
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .header-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .header-image {
+    width: 100%;
+  }
+  .header-image img {
+    width: 100%;
+  }
+
+  /* Menu */
+  nav a {
+    font-size: 20px;
+  }
+  #projets-menu ul {
+    padding-left: 0;
+  }
+  #projets-menu li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  /* Projets */
+  .project {
+    flex-direction: column;
+    margin: 40px 20px;
+    gap: 20px;
+  }
+  .text {
+    width: 100%;
+  }
+  .image, .image-grid, .image-grid2 {
+    width: 100%;
+  }
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Texte */
+  .text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Contact */
+  .contact {
+    margin-top: 20px;
+    padding: 40px 20px;
+  }
+}
