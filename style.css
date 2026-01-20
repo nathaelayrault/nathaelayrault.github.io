@@ -232,7 +232,7 @@ nav a {
     width: 100%;
     margin: 15px 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.6;
     text-align: justify;
     background: none;
@@ -279,7 +279,7 @@ nav a {
     color: #534FA5;
   }
   .text p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     margin-bottom: 15px;
   }
