@@ -200,14 +200,34 @@ nav a {
 .back-to-top.show {
   display: block;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   /* Général */
   body {
     font-size: 18px;
     line-height: 1.6;
   }
 
-  /* Texte d'intro */
+  /* Header : texte + image en colonne */
+  .header {
+    flex-direction: column !important;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .header-text {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .header-image {
+    width: 100%;
+    margin: 0;
+  }
+  .header-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Texte d'intro (sans fond) */
   #intro-text {
     width: 100%;
     margin: 15px 0;
@@ -218,7 +238,7 @@ nav a {
     background: none;
   }
 
-  /* Liens des projets (flèche uniquement) */
+  /* Menu des projets */
   #projets-menu ul {
     padding: 0;
     list-style: none;
@@ -232,23 +252,15 @@ nav a {
     color: #3A2A89;
     font-size: 18px;
     text-decoration: none;
-    position: relative;
-    padding-left: 25px; /* Espace pour la flèche */
-  }
-  .menu-secondary::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: #534FA5;
-    font-size: 16px;
+    padding: 8px 0;
   }
 
-  /* Projets (marges et texte plus gros) */
+  /* Projets : texte + images en colonne */
   .project {
     display: flex;
     flex-direction: column;
     margin: 30px 0;
-    padding: 20px;
+    padding: 15px;
     border-bottom: 1px solid #e0e0e0;
   }
   .text {
@@ -256,26 +268,26 @@ nav a {
     margin-bottom: 20px;
   }
   .text h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 10px;
     color: #3A2A89;
   }
   .project-type {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-style: italic;
     color: #534FA5;
   }
   .text p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7;
     margin-bottom: 15px;
   }
 
-  /* Images des projets */
+  /* Images des projets (colonne unique) */
   .image, .image-grid, .image-grid2 {
     width: 100%;
-    margin: 15px 0;
+    margin: 10px 0;
   }
   .image-grid, .image-grid2 {
     display: grid;
@@ -295,7 +307,7 @@ nav a {
     text-align: center;
   }
   .contact h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 15px;
   }
   .contact a {
