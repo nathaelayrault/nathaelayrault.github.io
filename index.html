@@ -11,7 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
+<script>
+  window.addEventListener('scroll', function() {
+    const backToTop = document.querySelector('.back-to-top');
+    if (window.pageYOffset > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+</script>
 <body>
   <header class="header">
     <div class="header-text">

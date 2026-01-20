@@ -179,150 +179,132 @@ nav a {
 .contact a:hover {
   text-decoration: underline;
 }
-
-/* Bouton retour en haut */
+/* ===== FLECHE (DESKTOP & MOBILE) ===== */
 .back-to-top {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  color: #534FA5;
+  width: 50px;
+  height: 50px;
+  background: #534FA5;
+  color: white;
+  border-radius: 50%;
   text-align: center;
-  line-height: 40px;
-  font-size: 28px;
-  text-decoration: none;
-  font-family: 'EB Garamond', serif;
+  line-height: 50px;
+  font-size: 24px;
   z-index: 1000;
+  border: none;
+  cursor: pointer;
+}
+.back-to-top.show {
+  display: block;
 }
 
-.back-to-top:hover {
-  color: #3A2A89;
-}
-/* ===== RESPONSIVE (MOBILE) ===== */
+/* ===== RESPONSIVE (MOBILE UNIQUEMENT) ===== */
 @media only screen and (max-width: 768px) 
-  /* Réinitialisation générale */
-  body, .header, .project, .contact {
-    margin: 0;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  /* Header */
-  .header {
-    flex-direction: column;
-    margin: 10px 0;
-    padding: 0 10px;
-  }
-  .header-text, .header-image {
-    width: 100%;
-    padding: 0;
-  }
-  .header h1 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  .subtitle {
-    font-size: 14px;
-    margin: 5px 0 15px 0;
-  }
-  nav {
-    width: 100%;
-  }
-  nav a {
-    display: block;
+  /* Général */
+  body {
     font-size: 18px;
-    margin: 8px 0;
-    color: #534FA5;
-    text-decoration: underline;
+    line-height: 1.6;
   }
-
-  /* Texte d'intro */
+  /* Texte d'intro (sans fond gris) */
   #intro-text {
     width: 100%;
     margin: 15px 0;
-    padding: 10px;
-    font-size: 16px;
+    padding: 0;
+    font-size: 18px;
     line-height: 1.6;
     text-align: justify;
-    background: #f9f9f9;
-    border-radius: 4px;
+    background: none;
   }
 
-  /* Menu des projets */
+  /* Boutons des projets (style amélioré) */
   #projets-menu ul {
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #projets-menu li {
     margin: 10px 0;
-    background: #f5f5f5;
-    padding: 10px;
-    border-radius: 4px;
+    width: 80%;
+    max-width: 300px;
   }
   .menu-secondary {
-    text-decoration: underline;
+    display: block;
+    background: #E6F0FF;
     color: #3A2A89;
-    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  .menu-secondary:hover {
+    background: #D4E6FF;
   }
 
-  /* Projets */
+  /* Projets (marges et texte plus gros) */
   .project {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
-    padding: 15px 0;
+    margin: 30px 0;
+    padding: 20px;
     border-bottom: 1px solid #e0e0e0;
   }
   .text {
     width: 100%;
-    margin-bottom: 15px;
-    order: 1;
+    margin-bottom: 20px;
   }
   .text h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #3A2A89;
   }
   .project-type {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
     font-style: italic;
+    color: #534FA5;
   }
   .text p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
   }
+
+  /* Images des projets */
   .image, .image-grid, .image-grid2 {
     width: 100%;
-    margin: 0;
-    order: 2;
+    margin: 15px 0;
   }
-  /* Force les grilles en colonne unique */
   .image-grid, .image-grid2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin: 0;
-    padding: 0;
   }
   .image-grid img, .image-grid2 img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 8px;
   }
 
   /* Contact */
   .contact {
-    margin: 30px 0;
+    margin: 40px 0;
     padding: 20px;
     text-align: center;
   }
   .contact h2 {
-    font-size: 22px;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .contact a {
+    color: #3A2A89;
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 18px;
   }
+
