@@ -202,114 +202,127 @@ nav a {
   color: #3A2A89;
 }
 /* ===== RESPONSIVE (MOBILE) ===== */
-@media screen and (max-width: 768px) {
-  /* Général */
-  body {
-    font-size: 16px;
+@media only screen and (max-width: 768px) 
+  /* Réinitialisation générale */
+  body, .header, .project, .contact {
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
   /* Header */
   .header {
-    flex-direction: column !important;
-    margin: 10px !important;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 0 10px;
   }
-  .header-text {
-    width: 100% !important;
-    margin-bottom: 10px !important;
+  .header-text, .header-image {
+    width: 100%;
+    padding: 0;
   }
   .header h1 {
-    font-size: 28px !important;
+    font-size: 24px;
+    margin: 10px 0;
   }
   .subtitle {
-    font-size: 16px !important;
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+  }
+  nav {
+    width: 100%;
   }
   nav a {
-    font-size: 20px !important;
-    display: block !important;
-    margin: 10px 0 !important;
-    color: #534FA5 !important;
-    text-decoration: underline !important; /* Souligné pour montrer que c'est un lien */
-  }
-  .header-image {
-    width: 100% !important;
-    margin: 10px 0 !important;
-  }
-  .header-image img {
-    width: 100% !important;
+    display: block;
+    font-size: 18px;
+    margin: 8px 0;
+    color: #534FA5;
+    text-decoration: underline;
   }
 
   /* Texte d'intro */
   #intro-text {
-    width: 100% !important;
-    margin: 15px 0 !important;
-    padding: 10px !important;
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    text-align: justify !important;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    background: #f9f9f9;
+    border-radius: 4px;
   }
 
   /* Menu des projets */
   #projets-menu ul {
-    padding-left: 0 !important;
-    list-style: none !important;
+    padding: 0;
+    list-style: none;
   }
   #projets-menu li {
-    margin: 8px 0 !important;
-    background: #f5f5f5 !important;
-    padding: 8px !important;
-    border-radius: 4px !important;
+    margin: 10px 0;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
   }
   .menu-secondary {
-    text-decoration: underline !important; /* Souligné pour montrer que c'est un lien */
-    color: #3A2A89 !important;
+    text-decoration: underline;
+    color: #3A2A89;
+    font-size: 16px;
   }
 
   /* Projets */
   .project {
-    flex-direction: column !important;
-    margin: 20px 0 !important;
-    padding: 15px 0 !important;
-    border-bottom: 1px solid #e0e0e0 !important;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
   }
   .text {
-    width: 100% !important;
-    margin-bottom: 15px !important;
+    width: 100%;
+    margin-bottom: 15px;
+    order: 1;
   }
   .text h2 {
-    font-size: 22px !important;
-    margin-bottom: 8px !important;
+    font-size: 20px;
+    margin-bottom: 8px;
   }
   .project-type {
-    font-size: 14px !important;
-    margin-bottom: 10px !important;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-style: italic;
   }
   .text p {
-    font-size: 16px !important;
-    line-height: 1.6 !important;
+    font-size: 16px;
+    line-height: 1.6;
   }
   .image, .image-grid, .image-grid2 {
-    width: 100% !important;
-    margin: 0 !important;
+    width: 100%;
+    margin: 0;
+    order: 2;
   }
+  /* Force les grilles en colonne unique */
   .image-grid, .image-grid2 {
-    grid-template-columns: 1fr !important;
-    gap: 10px !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
   }
   .image-grid img, .image-grid2 img {
-    width: 100% !important;
-    margin-bottom: 10px !important;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   /* Contact */
   .contact {
-    margin: 30px 0 !important;
-    padding: 20px !important;
-    text-align: center !important;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
   }
   .contact h2 {
-    font-size: 24px !important;
+    font-size: 22px;
   }
   .contact a {
-    text-decoration: underline !important;
+    text-decoration: underline;
+    font-size: 16px;
   }
-}
